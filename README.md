@@ -1,6 +1,6 @@
 # DevOps App
 
-![CI](https://github.com/pavelfialkovsky/devops-app/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/pavlofialkovskyi/devops-app/actions/workflows/ci.yml/badge.svg)
 
 A Flask + Postgres app with automated CI/CD
 
