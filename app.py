@@ -13,6 +13,18 @@ def get_db_connection():
     )
     return conn
 
+def init_db():
+    conn = get_db_connection
+    cur = conn.cursor()
+    cur.execute('''CREATE TABLE IF NOT EXISTS notes(id SERIAL PRIMARY KEY, content TEXT NOT NULL);
+    ''')
+    conn.commit()
+    cur.close()
+    conn.close()
+
+init_db()
+
+
 @app.route('/')
 def home():
     return jsonify({"message": "DevOps app is running"})
